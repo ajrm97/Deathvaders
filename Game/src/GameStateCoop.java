@@ -291,21 +291,25 @@ public class GameStateCoop implements GameState{
 			obj.nuke();
 		}
 		if(opciones.getPU1() == 6){
-			p2.setVida(100);
+			p2.setVida(10);
 			timerVida++;
 			if(timerVida > 100) {
 				p2.setVida(1);
 				opciones.setPU1(-1);
+				p2.setVida(1);
 				timerVida = 0;
+				p2.setVida(1);
 			}
 		}
 		if(opciones.getPU2() == 6){
-			p.setVida(100);
+			p.setVida(10);
 			timerVida++;
 			if(timerVida > 100) {
 				p.setVida(1);
 				opciones.setPU2(-1);
+				p.setVida(1);
 				timerVida = 0;
+				p.setVida(1);
 			}
 		}
 		if(opciones.getGO() == 1) {
